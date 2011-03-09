@@ -9,8 +9,10 @@
  */
 
 set_include_path(getcwd() . DIRECTORY_SEPARATOR . get_include_path());
-require 'lib/prggmr.php';
+require 'lib/Prggmr/lib/prggmr.php';
 \prggmr::initialize();
+
+define('LINE_BREAK', "\n");
 
 require 'modules/console.php';
 require 'modules/user.php';

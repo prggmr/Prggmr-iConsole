@@ -44,7 +44,7 @@ class User extends \iconsole\Console
     // Constructs the user object dispatching the user login events
     public function __construct()
     {
-        $this->_db = new \PDO('sqlite:'.PRGGMR_LIBRARY_PATH.'/databases/users.sqlite');
+        $this->_db = new \PDO('sqlite:'.PRGGMR_LIBRARY_PATH.'../../../databases/users.sqlite');
         if (file_exists(self::PERSISTANT_FILE)) {
             $user = trim(file_get_contents(self::PERSISTANT_FILE));
             $this->console_feedback_user_login(array($user));
