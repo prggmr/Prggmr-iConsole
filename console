@@ -1,0 +1,25 @@
+#!/usr/bin/php
+<?php
+
+/**
+ * Iconsole Prggmr Interactive Console
+ *
+ * @author Nickolas Whiting
+ * @date February 17th, 2011
+ */
+
+set_include_path(getcwd() . DIRECTORY_SEPARATOR . get_include_path());
+require 'lib/prggmr.php';
+\prggmr::initialize();
+
+require 'modules/console.php';
+require 'modules/user.php';
+require 'modules/commands.php';
+
+foreach (glob("events/*.php") as $filename) {
+    require $filename;
+}
+
+$user = new \iconsole\User();
+// Dispatch the command execution
+$commands = new \iconsole\Commands($user);
