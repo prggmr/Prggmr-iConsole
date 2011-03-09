@@ -20,18 +20,17 @@ defined by a single method.
 
 ## Installation &amp; Use ##
 
-> Download or checkout the latest copy.
-> Open your command line
-> cd into the path to which you downloaded iConsole
-> Run the following commands
-> chmod 755 console
-> ./console
+- Download or checkout the latest copy.
+- Open your command line
+- cd into the path to which you downloaded iConsole
+- Run the following commands
+- chmod 755 console
+- ./console
 
 You will be prompted to enter your username and password the default username and password is test/password.
 
 ## Development ##
+
 You may read more on how iConsole was built by following the Prggmr Guide at this link [here](http://www.prggmr.com/interactive_console).
 
 More commands will be added in the future.
-
-## License ##
