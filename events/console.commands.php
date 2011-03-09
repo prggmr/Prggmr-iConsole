@@ -22,6 +22,5 @@
 });
 
 \prggmr::listen('console_feedback_command_test_command', function($event, $command) {
-
     $event->output("You have just executed me with the input of : $command");
 });
