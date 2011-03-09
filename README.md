@@ -8,9 +8,9 @@ by Nickolas Whiting
 
 ## Introduction ##
 
-> iConsole is a unix like interactive console written with the Prggmr framework.
-> The console allows for multiple user accounts with authentication, with the possibility to develop an unlimited number of commands
-defined by a single method.
+Prggmr-iConsole is a unix like interactive console written with the Prggmr framework.
+
+The console allows for multiple user accounts with authentication, and command based event execution.
 
 ## Minimum Requirements ##
 
@@ -27,7 +27,9 @@ defined by a single method.
 - chmod 755 console
 - ./console
 
-You will be prompted to enter your username and password the default username and password is test/password.
+You will be prompted to enter your username and password.
+
+The default username and password is test : password.
 
 ## Development ##
 
